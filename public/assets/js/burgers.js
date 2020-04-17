@@ -21,12 +21,13 @@ $(function() {
     );
   });
 
-  $(".create-form").on("submit", function(event) {
+  $("#submit").on("click", function(event) {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
     var newBurger = {
-      name: $("#bur").val().trim(),
+      name: $("#newburger").val().trim(),
+      devour: 0
   // devour: $("[name=devour]:checked").val().trim()
     };
 console.log(newBurger)

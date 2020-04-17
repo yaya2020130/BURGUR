@@ -1,7 +1,7 @@
 * body{background-color: orange;
 
 }
-#img{margin:auto
+/* #img{margin:auto
   
 
 }
@@ -13,6 +13,15 @@ li {
   margin-left: 200px;
   float: left;
 
+}
+
+
+
+.right{
+  margin-right: 100px;
+}
+.left{
+  margin-right: 300px;
 }
 
 .label {
@@ -27,5 +36,22 @@ li {
 
 .form-group {
   margin-left: px;
+  float-left:100px;
 
+}
+
+
+.creat-form{
+  margin-bottom: 50px;
+} */
+
+#banner {
+  width: 60%;
+  height: 30vh;
+  margin-left: 20%;
+}
+
+.col-5 {
+  margin: auto;
+  text-align: center;
 }

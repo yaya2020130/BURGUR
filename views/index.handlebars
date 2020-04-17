@@ -1,45 +1,26 @@
-<h1>EAT DA BURGER</h1>
-<img src="views/partials/burger.png" alt="burger">
-
-<ol>
+<div class="row justify-content-center mt-5 mb-5">
+  <input type="text" id="newburger" placeholder="enter a new burger name">
+  <button id="submit">ADD BURGER</button>
+</div>
+<div class="row">
+  <div class="col-5"><ol class='left'>
   {{#each burgers}}
     {{#unless devour}}
       {{> burgers/burger-block hunger=true}}
     {{/unless}}
   {{/each}}
-</ol>
-
-
-
-<ol>
+</ol></div>
+  <div class="col-5">
+<ol class='right'>
   {{#each burgers}}
     {{#if devour}}
       {{> burgers/burger-block hunger=false}}
     {{/if}}
   {{/each}}
-</ol>
-
-
-
-
-
-
-
-
-<h2>Eat Da Burger </h2>
-
-
-
-
-<form class="create-form">
-<div class="form-group">
-
-  <input type="text" id ="bur"  name="name" name="devour" value= "0"><br>
-<button type="submit" >submit Burger</button><br>
-<h5> Enter the burger you want to eat.Click the "submit" Button</h5>
-
+</ol></div>
 </div>
-</form> 
+
+
 
 
 
