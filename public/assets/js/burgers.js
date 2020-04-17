@@ -5,7 +5,7 @@ $(function() {
     var newHunger = $(this).data("newhunger");
 
     var newHungerState = {
-     hungry: newHungry
+     devour: newHunger
     };
 
     // Send the PUT request.
@@ -26,14 +26,14 @@ $(function() {
     event.preventDefault();
 
     var newBurger = {
-      name: $("#bu").val().trim(),
-   hungry: $("[name=hungry]:checked").val().trim()
+      name: $("#bur").val().trim(),
+  // devour: $("[name=devour]:checked").val().trim()
     };
-
+console.log(newBurger)
     // Send the POST request.
     $.ajax("/api/burgers", {
       type: "POST",
-      data: newCat
+      data: newBurger
     }).then(
       function() {
         console.log("created new burger");
@@ -43,15 +43,15 @@ $(function() {
     );
   });
 
-  $(".delete-cat").on("click", function(event) {
+  $(".delete-bur").on("click", function(event) {
     var id = $(this).data("id");
 
     // Send the DELETE request.
-    $.ajax("/api/cats/" + id, {
+    $.ajax("/api/burgers/" + id, {
       type: "DELETE"
     }).then(
       function() {
-        console.log("deleted cat", id);
+        console.log("deleted burger", id);
         // Reload the page to get the updated list
         location.reload();
       }

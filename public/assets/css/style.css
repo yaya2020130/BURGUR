@@ -1,3 +1,31 @@
-* body{background-color: yellow;
+* body{background-color: orange;
+
+}
+#img{margin:auto
+  
+
+}
+
+li {
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+  margin-left: 200px;
+  float: left;
+
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-left: px;
 
 }

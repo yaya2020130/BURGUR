@@ -1,5 +1,12 @@
-use burgers_db;
-INSERT INTO burgers (name,price) VALUES ("double bugur",10),
-("single bugur",10),
-("flat bugur",10),
-("vegi bugur",10);
+
+
+
+
+INSERT INTO burgers (name) VALUES ('doble burger');
+INSERT INTO burgers (name) VALUES ('doble burger');
+INSERT INTO  burgers (name) VALUES ('single buger');
+INSERT INTO  burgers (name  ,devour) VALUES ('single buger', true);
+INSERT INTO  burgers (name,   devour) VALUES ('vegi burger', true);
+INSERT INTO  burgers (name,   devour) VALUES ('vegi burger', true);
+INSERT INTO  burgers (name) VALUES ('doble burger');
+
