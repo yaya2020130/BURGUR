@@ -10,11 +10,11 @@ User can order  a burger and if he does not want it he can delete it .
 * [License](#license)
 
 ## Installation
-the app uses sql language as a database .
+The app uses sql language as a database .
 
 ## Usage 
 
-![Create Account](assets/createacc.gif)
+
 
 Upon opening the application, you can type the type of burger you want it will go to waiting list.once the burger is ready it can be devoured or deleted.
 
